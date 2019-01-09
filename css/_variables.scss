@@ -1,0 +1,29 @@
+
+$font: 'Roboto', sans-serif;
+
+$boja : (
+nar: #f75311,
+t-plava : #374249,
+tr-plava : rgba(55, 66, 73, .5),
+font: #797979,
+naslov:  #374249,
+siva-bg: #f3f7f9,
+siva-hv: #cfd1d3
+);
+
+$velicina : (
+  n : 0,
+  xs : 0.1rem,
+  s :  0.5rem,
+  m : 0.75rem,
+  l : 1rem,
+  xl : 3rem,
+);
+
+@function boja($ime){
+    @return map-get($boja, $ime);
+}
+
+@function marg($ime...){
+    @return map-get($velicina, $ime...);
+}
