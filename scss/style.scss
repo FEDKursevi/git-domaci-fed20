@@ -1,0 +1,87 @@
+@import 'vars';
+@import 'mixin';
+
+*{
+    font-family: 'Roboto';
+}
+
+body {
+    margin: auto;
+    width: 100%;
+}
+
+.navbar {
+    background-color: $backgroundNavFooter;
+    height: 60px;
+
+    a{
+        color: $textColor;
+        text-decoration: none;
+        padding: 26px 30px;
+        
+
+        &:hover{
+            background-color: red;
+            text-decoration: underline;
+        }
+    }
+    img {
+        width: 30px;
+        height: 30px;
+        margin-left: 30px;
+    }
+
+    .city-NY{
+        display: inline-block;
+
+        a{
+            padding: 0px;
+            margin-right: 60px;
+        }
+    } 
+}
+
+.text-main {
+    background-image: url(../slike/intro.jpg);
+    color: $textColor;
+    height: 300px;
+    padding-top: 300px;
+    text-align: center;
+
+    h1{
+        font-size: 50px;
+        margin-bottom: 10px;
+    }
+
+    p{
+        margin-top: 10px;
+    }
+
+    .text-holder {
+        background: $colorOpacity;
+        width: 60%;
+        margin: auto;
+    }
+}
+
+.offer-main a{
+    border: 1px solid #797979;
+    display: inline-block;
+    padding: 15px 40px;
+    @include border-radius(25px);
+    color: $fontColor;
+
+    .first{
+        text-decoration: none;
+    }
+}
+
+.right-side {
+    float: right;
+    margin: 20px;
+
+    a{
+        margin: 10px;
+    }
+}
+

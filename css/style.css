@@ -1,0 +1,61 @@
+* {
+  font-family: 'Roboto'; }
+
+body {
+  margin: auto;
+  width: 100%; }
+
+.navbar {
+  background-color: #424141;
+  height: 60px; }
+  .navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 26px 30px; }
+    .navbar a:hover {
+      background-color: red;
+      text-decoration: underline; }
+  .navbar img {
+    width: 30px;
+    height: 30px;
+    margin-left: 30px; }
+  .navbar .city-NY {
+    display: inline-block; }
+    .navbar .city-NY a {
+      padding: 0px;
+      margin-right: 60px; }
+
+.text-main {
+  background-image: url(../slike/intro.jpg);
+  color: white;
+  height: 300px;
+  padding-top: 300px;
+  text-align: center; }
+  .text-main h1 {
+    font-size: 50px;
+    margin-bottom: 10px; }
+  .text-main p {
+    margin-top: 10px; }
+  .text-main .text-holder {
+    background: rgba(128, 128, 128, 0.5);
+    width: 60%;
+    margin: auto; }
+
+.offer-main a {
+  border: 1px solid #797979;
+  display: inline-block;
+  padding: 15px 40px;
+  border-radius: 25px;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  color: #797979; }
+  .offer-main a .first {
+    text-decoration: none; }
+
+.right-side {
+  float: right;
+  margin: 20px; }
+  .right-side a {
+    margin: 10px; }
+
+/*# sourceMappingURL=style.css.map */
