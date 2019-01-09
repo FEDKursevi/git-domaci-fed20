@@ -70,7 +70,7 @@ section {
   //  position: relative;
      }
     
-    section:nth-child(even) {
+    section:nth-child(odd) {
         background-color: boja(siva-bg);
  }
   
@@ -113,6 +113,74 @@ section {
             }        
       } 
 }
+
+.treca {
+  
+    margin: 0 auto;
+   
+
+    .wrapper {
+     display: flex;
+    flex-wrap: wrap;
+    margin-left: 10%;
+    margin-right: 10%;
+     justify-content: center;
+
+
+.slike{    
+        width: 300px;
+        height:400px;              
+        margin: marg(xl);
+        @include bg-cover;
+        background-position: center center;
+        overflow: hidden; 
+        position: relative; 
+        
+        .box-hover {
+            height: 40%;
+            width: 100%;
+            color: #fff;
+            line-height: 2.5rem;          
+            background-color: boja(tr-plava);
+            padding-top: marg(l);
+            padding-left: marg(l);
+            position: absolute;
+            overflow: hidden;
+            top: -5rem;
+            opacity: 0;
+            transition: all .5s ease-out;
+        }
+        &:hover .box-hover {
+            opacity: 1;
+            top: 0;
+        }
+  }
+
+
+@for $i from 1 through 6 {
+    .img#{$i} {
+        background-image: url('../slike/' + $i + '.jpg');
+      }
+     }
+   } 
+}
+
+@include respond(tab-port) {
+    .druga {
+        padding-left: 40%;
+    }
+
+    .treca {
+        text-align: inherit;
+
+        .slike{
+            width: 45%;
+        }
+    }
+}
+
+
+
 
 @include respond(phone) {
 nav {       
