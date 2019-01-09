@@ -228,6 +228,17 @@ section {
 
 
 
+footer {
+	background-color: boja(t-plava);
+	text-align: center;
+	color: white;
+	padding: 1em 0;
+}
+
+.narText {
+	color:boja(nar);
+} 
+
 
 @include respond(tab-port) {
     .druga {

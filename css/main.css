@@ -284,6 +284,17 @@ section:nth-child(odd) {
   border: 1px solid #797979;
 }
 
+footer {
+  background-color: #374249;
+  text-align: center;
+  color: white;
+  padding: 1em 0;
+}
+
+.narText {
+  color: #f75311;
+}
+
 @media only screen and (min-width: 56.25em) {
   .druga {
     padding-left: 40%;
