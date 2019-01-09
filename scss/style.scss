@@ -230,6 +230,45 @@ header {
             margin-bottom: 3em;
             margin-top: 4em;
         }
+
+        form {
+            width: 65%;
+            float: right;
+            height: 15em;
+            background-color: $orange;
+            padding: 2em;
+            ::placeholder {
+                color: $font-color;
+            }
+
+            #gender {
+                width: 9em;
+                height: 2.2em;
+                margin-bottom: 2em;
+            }
+
+            #ime {
+                height: 2.2em;
+                margin-left: 2em;
+                width: 52em;
+                padding-left: 0.7em;
+                margin-bottom: 2em;
+            }
+
+            #email {
+                width: 100%;
+                height: 2.2em;
+                margin-bottom: 2em;
+                padding-left: 0.7em;
+            }
+
+            #tArea {
+                width: 100%;
+                height: 5.2em;
+                padding-left: 0.7em;
+                padding-bottom: 2em;
+            }
+        }
     }
     
 }
