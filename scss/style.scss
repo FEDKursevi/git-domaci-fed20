@@ -1,0 +1,83 @@
+@import 'vars';
+@import 'mixins';
+
+@include main;
+
+header {
+    width: 100%;
+    height: 50em;
+    background: url('../slike/intro.jpg');
+    background-size: cover;
+
+    .navigationMain {
+        width: 100%;
+        height: 3.5em;
+        background: $header-footer-dark-blue;
+
+        .location {
+            display: inline-block;
+            background-color: $orange;
+            color: white;
+            height: 100%;
+            width: 20%;
+            text-decoration: underline;
+            font-size: 1em;
+            padding-top: 0.6em;
+            padding-left: 2em;
+
+            img {
+                display: inline-block;
+                width: 40px;
+                vertical-align: middle;
+            }
+        }
+
+        ul {
+            width: 80%;
+            list-style: none;
+            float: right;
+
+            li {
+                display: inline-block;
+                margin-left: 1em;
+                padding-right: 2em;
+                padding-top: 1.25em;
+
+                a {
+                    text-decoration: none;
+                    color: white;
+
+                    &:hover {
+                        text-decoration: underline;
+                    }
+                }
+            }
+
+        }
+
+    }
+
+    .headings {
+        text-align: center;
+        color: white;
+        width: 75%;
+        background-color: rgba(55, 66, 73, 0.5);
+        margin-top: 30em;
+        margin-right: auto;
+        margin-left: auto;
+        height: 6.5em;
+        padding-top: 0.2em;
+
+        h1 {
+            font-size: 4em;
+            font-weight: normal;
+            margin: 0 auto;
+        }
+
+        h2 {
+            margin: 0 auto;
+            font-weight: normal;
+            font-size: 1.5em;
+        }
+    }
+}
