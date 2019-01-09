@@ -135,6 +135,7 @@ section {
         background-position: center center;
         overflow: hidden; 
         position: relative; 
+        text-align: center;
         
         .box-hover {
             height: 40%;
@@ -149,10 +150,12 @@ section {
             top: -5rem;
             opacity: 0;
             transition: all .5s ease-out;
+              
         }
         &:hover .box-hover {
             opacity: 1;
             top: 0;
+          
         }
   }
 
@@ -165,6 +168,67 @@ section {
    } 
 }
 
+.cetvrta{
+    background-color: #fff;
+    padding: 3rem 20%;
+	color: boja(font);
+
+	p {
+		padding-bottom: 2rem;
+    }
+    
+    .btn {
+        @include btn;
+		display: none;
+	}
+
+	table {
+		width: 100%;
+		border-collapse: collapse;
+
+		th, td {
+			padding: 1rem;
+		}
+
+		 thead {
+		 	background-color: boja(nar);
+
+		 	th {
+		 		color: white; 
+
+		 		&:first-child {
+		 			background-color: white;
+		 		}
+		 	}
+		 }
+
+		 tbody {		 	
+
+		 	th {
+		 		color: white;
+		 		background-color: boja(t-plava);
+		 		border: 1px solid boja(font);
+
+		 		&[rowspan="3"] {
+		 			background-color: boja(nar);
+		 		}
+
+		 		&[colspan="4"] {
+		 			background-color: white;
+		 			border: none;
+		 		}
+		 	}
+
+		 	td {
+		 		border: 1px solid boja(font);
+		 	}
+		 }
+	}
+}
+
+
+
+
 @include respond(tab-port) {
     .druga {
         padding-left: 40%;
@@ -176,6 +240,10 @@ section {
         .slike{
             width: 45%;
         }
+    }
+
+    .cetvrta {
+        padding: marg(xl) 15%;
     }
 }
 
@@ -200,14 +268,38 @@ nav {
             padding: 1.3rem 0;             
         }
     }
-}
+
 
 .druga{
   padding-left: marg(xl);
     
 
-    button{
-   
+    button{   
         margin: marg(xs);
+    }
+}
+
+    .treca {
+        .slike {
+            width: 100%;
+
+            .box-hover {
+              top: 0;
+              opacity: 1;
+            }
+        }
+    }
+
+    .cetvrta {
+
+        button{
+			display: block;
+			margin: 0 auto;
+		}
+
+
+        table {
+            display: none;
+        }
     }
 }

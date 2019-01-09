@@ -177,6 +177,7 @@ section:nth-child(odd) {
   background-position: center center;
   overflow: hidden;
   position: relative;
+  text-align: center;
 }
 
 .treca .wrapper .slike .box-hover {
@@ -224,6 +225,65 @@ section:nth-child(odd) {
   background-image: url("../slike/6.jpg");
 }
 
+.cetvrta {
+  background-color: #fff;
+  padding: 3rem 20%;
+  color: #797979;
+}
+
+.cetvrta p {
+  padding-bottom: 2rem;
+}
+
+.cetvrta .btn {
+  border-radius: 20px;
+  padding: .5rem 1rem;
+  background-color: white;
+  color: #797979;
+  margin: 0 1em;
+  display: none;
+}
+
+.cetvrta table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.cetvrta table th, .cetvrta table td {
+  padding: 1rem;
+}
+
+.cetvrta table thead {
+  background-color: #f75311;
+}
+
+.cetvrta table thead th {
+  color: white;
+}
+
+.cetvrta table thead th:first-child {
+  background-color: white;
+}
+
+.cetvrta table tbody th {
+  color: white;
+  background-color: #374249;
+  border: 1px solid #797979;
+}
+
+.cetvrta table tbody th[rowspan="3"] {
+  background-color: #f75311;
+}
+
+.cetvrta table tbody th[colspan="4"] {
+  background-color: white;
+  border: none;
+}
+
+.cetvrta table tbody td {
+  border: 1px solid #797979;
+}
+
 @media only screen and (min-width: 56.25em) {
   .druga {
     padding-left: 40%;
@@ -233,6 +293,9 @@ section:nth-child(odd) {
   }
   .treca .slike {
     width: 45%;
+  }
+  .cetvrta {
+    padding: 3rem 15%;
   }
 }
 
@@ -258,13 +321,25 @@ section:nth-child(odd) {
     background-color: #000;
     padding: 1.3rem 0;
   }
-}
-
-.druga {
-  padding-left: 3rem;
-}
-
-.druga button {
-  margin: 0.1rem;
+  .druga {
+    padding-left: 3rem;
+  }
+  .druga button {
+    margin: 0.1rem;
+  }
+  .treca .slike {
+    width: 100%;
+  }
+  .treca .slike .box-hover {
+    top: 0;
+    opacity: 1;
+  }
+  .cetvrta button {
+    display: block;
+    margin: 0 auto;
+  }
+  .cetvrta table {
+    display: none;
+  }
 }
 /*# sourceMappingURL=main.css.map */
