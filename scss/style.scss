@@ -85,3 +85,66 @@ body {
     }
 }
 
+.gallery-main {
+    width: 100%;
+    overflow: auto;
+    background-color: $backgroundGallery;
+    padding: 40px 0px;
+
+    div{
+        width: 65%;
+        margin: auto;
+
+        img {
+            width: 24%;
+        }
+    }
+}
+
+.pricing-main {
+    text-align: center;
+
+    h3{
+        color: $colorP;
+    }
+    p{
+        color: $fontColor;
+    }
+
+    table {
+        width: 50%;
+        margin: auto;
+
+        tr,td {
+        border: 1px solid $fontColor;
+       
+
+        .hide {
+            border: none;
+        }
+
+        .orange {
+            background-color: orange;
+        }
+
+        .grey {
+            background-color: grey;
+            }
+        }
+    }
+}
+
+footer {
+    background-color: $backgroundNavFooter;
+    color: $textColor;
+    height: 50px;
+
+    p{
+        text-align: center;
+        padding-top: 10px;
+        font-size: 12px;
+    }
+    span {
+        color: red;
+    }
+}

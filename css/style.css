@@ -58,4 +58,44 @@ body {
   .right-side a {
     margin: 10px; }
 
+.gallery-main {
+  width: 100%;
+  overflow: auto;
+  background-color: #f3f7f9;
+  padding: 40px 0px; }
+  .gallery-main div {
+    width: 65%;
+    margin: auto; }
+    .gallery-main div img {
+      width: 24%; }
+
+.pricing-main {
+  text-align: center; }
+  .pricing-main h3 {
+    color: black; }
+  .pricing-main p {
+    color: #797979; }
+  .pricing-main table {
+    width: 50%;
+    margin: auto; }
+    .pricing-main table tr, .pricing-main table td {
+      border: 1px solid #797979; }
+      .pricing-main table tr .hide, .pricing-main table td .hide {
+        border: none; }
+      .pricing-main table tr .orange, .pricing-main table td .orange {
+        background-color: orange; }
+      .pricing-main table tr .grey, .pricing-main table td .grey {
+        background-color: grey; }
+
+footer {
+  background-color: #424141;
+  color: white;
+  height: 50px; }
+  footer p {
+    text-align: center;
+    padding-top: 10px;
+    font-size: 12px; }
+  footer span {
+    color: red; }
+
 /*# sourceMappingURL=style.css.map */
