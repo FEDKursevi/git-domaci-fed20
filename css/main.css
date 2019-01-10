@@ -18,6 +18,7 @@ h2 {
   font-weight: bold;
   padding-bottom: 1rem;
   color: #374249;
+  text-align: center;
 }
 
 nav {
@@ -75,9 +76,9 @@ nav ul {
 
 nav ul li {
   display: inline-block;
-  line-height: 3em;
+  line-height: 3rem;
   text-align: center;
-  height: 3em;
+  height: 3rem;
 }
 
 nav ul li a {
@@ -121,11 +122,11 @@ section:nth-child(odd) {
 
 .prva .intro h1 {
   padding-bottom: 0.1rem;
-  font-size: 1.8rem;
+  font-size: 2.2rem;
 }
 
 .prva .intro p {
-  font-size: .8rem;
+  font-size: .9rem;
 }
 
 .druga {
@@ -140,7 +141,7 @@ section:nth-child(odd) {
 
 .druga button {
   border-radius: 20px;
-  padding: .5rem 1rem;
+  padding: .6rem 1.4rem;
   background-color: white;
   color: #797979;
   margin: 0 1em;
@@ -163,8 +164,8 @@ section:nth-child(odd) {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  margin-left: 10%;
-  margin-right: 10%;
+  margin-left: 5%;
+  margin-right: 5%;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -173,10 +174,6 @@ section:nth-child(odd) {
 .treca .wrapper .slike {
   width: 300px;
   height: 400px;
-  /*  height: 100%;
-        width: 100%;
-        margin-left: 12.5%;           
-        margin-right: 12.5%;  */
   margin: 3rem;
   background-size: cover;
   background-position: center center;
@@ -242,7 +239,7 @@ section:nth-child(odd) {
 
 .cetvrta .btn {
   border-radius: 20px;
-  padding: .5rem 1rem;
+  padding: .6rem 1.4rem;
   background-color: white;
   color: #797979;
   margin: 0 1em;
@@ -290,11 +287,60 @@ section:nth-child(odd) {
   border: 1px solid #797979;
 }
 
+.peta {
+  padding: 3rem;
+}
+
+.peta .kontakt {
+  padding: 3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-flow: wrap;
+      flex-flow: wrap;
+}
+
+.peta .kontakt .forma {
+  margin-top: 3rem;
+  background-color: #f75311;
+  padding: 1rem;
+  margin-left: 6%;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 500px;
+          flex: 0 0 500px;
+}
+
+.peta .kontakt .forma select, .peta .kontakt .forma input {
+  padding: 0.5rem;
+  float: left;
+  margin-bottom: 1rem;
+}
+
+.peta .kontakt .forma select {
+  margin-right: 3%;
+  background-color: #fff;
+  width: 25%;
+}
+
+.peta .kontakt .forma input[name="name"] {
+  width: 70%;
+}
+
+.peta .kontakt .forma input[name="email"], .peta .kontakt .forma textarea {
+  width: 100%;
+}
+
 footer {
   background-color: #374249;
   text-align: center;
   color: white;
-  padding: 1em 0;
+  padding: 1rem 0;
 }
 
 .narText {
@@ -341,7 +387,7 @@ footer {
   .druga {
     padding-left: 3rem;
   }
-  .druga button {
+  .druga .btn {
     margin: 0.1rem;
   }
   .treca .slike {

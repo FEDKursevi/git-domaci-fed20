@@ -5,10 +5,11 @@
 @include reset;
 
 h2{
-    text-transform: uppercase;
+     text-transform: uppercase;
     font-weight: bold;
     padding-bottom: marg(l);
     color: boja(naslov);
+    text-align: center; 
 }
 
 nav{
@@ -26,7 +27,7 @@ nav{
     a{
         @include link;
         display: flex;
-justify-content: center;
+        justify-content: center;
         p{        
          text-decoration: underline;
          line-height: marg(xl);
@@ -47,14 +48,13 @@ justify-content: center;
 
        li{
            display: inline-block;
-           line-height: 3em;
+           line-height: 3rem;
            text-align: center;
-           height: 3em;
-           
+           height: 3rem;          
 
            a{
-               @include link;
-               padding-left: marg(xl);
+             @include link;
+             padding-left: marg(xl);
 
                &:hover {
               text-decoration: underline;
@@ -66,8 +66,7 @@ justify-content: center;
 
 section {
     width: 100%;    
-	text-align: center;
-  //  position: relative;
+	text-align: center;  
      }
     
     section:nth-child(odd) {
@@ -89,11 +88,11 @@ section {
             background-color: boja(tr-plava);
             padding:marg(xs);
             h1{
-                padding-bottom: marg(xs);
-                font-size: 1.8rem;
+            padding-bottom: marg(xs);
+            font-size: 2.2rem;
             }
             p{
-                font-size: .8rem;
+            font-size: .9rem;
             }
         }
     }
@@ -114,26 +113,20 @@ section {
       } 
 }
 
-.treca {
-  
-    margin: 0 auto;
-   
+.treca {  
+    margin: 0 auto; 
 
     .wrapper {
      display: flex;
     flex-wrap: wrap;
-    margin-left: 10%;
-    margin-right: 10%;
+    margin-left: 5%;
+    margin-right: 5%;
      justify-content: center;
 
 
 .slike{    
         width: 300px;
-        height:400px;    
-       /*  height: 100%;
-        width: 100%;
-        margin-left: 12.5%;           
-        margin-right: 12.5%;  */          
+        height:400px;             
         margin: marg(xl); 
         @include bg-cover;
         background-position: center center;
@@ -158,11 +151,9 @@ section {
         }
         &:hover .box-hover {
             opacity: 1;
-            top: 0;
-          
+            top: 0;          
         }
   }
-
 
 @for $i from 1 through 6 {
     .img#{$i} {
@@ -230,13 +221,48 @@ section {
 	}
 }
 
+.peta {  
+      padding: marg(xl);      
+      
+    .kontakt {
+    padding: marg(xl);
+     display: flex;   
+     justify-content: center;
+     align-items: center;   
+     flex-flow: wrap;    
+     
+     .forma{ 
+         margin-top: marg(xl);     
+         background-color: boja(nar);
+         padding: marg(l);
+         margin-left: 6%;
+         flex: 0 0 500px;
 
+          select, input {
+                padding: marg(s);
+                float: left;                
+                margin-bottom: marg(l);
+            }
+            select {
+                margin-right: 3%;
+                background-color: #fff;
+                width: 25%;
+            }
+            input[name="name"]{
+                width: 70%;
+            }
+            input[name="email"], textarea {
+                width: 100%;
+         }
+      } 
+    }  
+}  
 
 footer {
 	background-color: boja(t-plava);
 	text-align: center;
 	color: white;
-	padding: 1em 0;
+	padding: 1rem 0;
 }
 
 .narText {
@@ -259,10 +285,8 @@ footer {
 
     .cetvrta {
         padding: marg(xl) 15%;
-    }
+    }    
 }
-
-
 
 
 @include respond(phone) {
@@ -284,13 +308,11 @@ nav {
         }
     }
 
-
 .druga{
-  padding-left: marg(xl);
-    
+  padding-left: marg(xl);    
 
-    button{   
-        margin: marg(xs);
+    .btn{   
+        margin: marg(xs);     
     }
 }
 
@@ -312,9 +334,8 @@ nav {
 			margin: 0 auto;
 		}
 
-
         table {
             display: none;
         }
-    }
+    }    
 }
