@@ -102,3 +102,90 @@ header {
         }
     }
 }
+#pricing {
+    color: $fontColor;
+    margin: 50px auto;
+    h2 {
+        @include naslovi;
+    }
+    p {
+        text-align: center;
+        margin: 50px auto;
+    }
+    table {
+        width: 40%;
+        margin: $center;
+        border-collapse: collapse;
+        text-align: center;
+        td {
+            border: 1px solid $fontColor;
+            padding: $tablePadding;
+        }
+        th {
+            @include tabelaHead {
+                background-color: $orange;
+                padding: $tablePadding; 
+            }       
+        }
+        .empty {
+            border: none;
+        }
+        .grey {
+            background-color: $darkblue;
+            @include tabelaHead;      
+        }
+    }
+}
+#contact {
+    background-color: $sectionBkg;
+    padding: 50px 0px;
+    text-align: center;
+    h2 {
+        margin-bottom: 50px;
+        @include naslovi;
+    }
+    #googleMap {
+        display: inline-block;
+        width: 25%;
+        height: 300px;
+    }
+    form {
+        text-align: center;
+        display: inline-block;
+        width: 40%;
+        background-color: $orange;
+        margin-left: 50px;
+        vertical-align: top;
+        select {
+            width: 15%;
+            @include tabelaInput;
+        }
+        input[type=text] {
+            width: 65%;
+            @include tabelaInput {
+                margin-left: 0px;
+            }
+        }
+        input[type=email] {
+            width: 85%;
+            @include tabelaInput {
+                margin-top: 0px;
+            }
+        }
+        textarea {
+            width: 85%;
+            @include tabelaInput {
+                margin-top: 0px;
+            }
+        }
+    }
+}
+footer {
+    background-color: $darkblue;
+    color:white;
+    text-align: center;
+    line-height: 3 * $fontSize;
+    span {
+        color: $orange;
+    }
+}

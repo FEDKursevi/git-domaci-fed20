@@ -32,3 +32,14 @@
     text-align: left;
     padding: 10px 0px 40px 10px;
 }
+@mixin tabelaHead {
+    color: white;
+    font-weight: bold;
+    @content;
+}
+@mixin tabelaInput {
+    font-family: $bodyFont;
+    padding: 10px 10px;
+    margin: 30px;
+    @content;
+}
