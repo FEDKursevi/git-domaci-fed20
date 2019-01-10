@@ -1,0 +1,104 @@
+@import "vars";
+@import "mixins";
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-size: $fontSize;
+    font-family: $bodyFont;
+}
+header {
+    width: 100%;
+    nav {
+        background-color: $darkblue;
+        ul li {
+            display: inline-block;
+            padding: 20px 40px;
+            a {
+                text-decoration: none;
+                color: white;
+                
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+            &:first-child {
+                background-color: $orange;
+                color: white;
+                text-decoration: underline;
+                font-size: 1.5 * $fontSize;
+                width: 20%;
+            }
+        }
+    }
+    #head {
+        background: url('../slike/intro.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        overflow: auto;
+        h1 {
+            @include glavniNaslov {
+                margin-top: 400px;
+                font-size: 4 * $fontSize;
+            }  
+        }
+        p {
+            @include glavniNaslov {
+                font-size: 2 * $fontSize;
+                line-height: 4 * $fontSize;
+                margin-bottom: 100px;
+            }
+        }
+    }
+}
+#filter {
+    margin: 30px 200px 30px 0px;
+    text-align: right;
+    button {
+        @include dugme {
+        display: inline-block;
+        margin-right: 2%;
+        }
+        &:hover {
+            color: white;
+            background-color: $buttonHover;
+            }
+        }
+}
+#photo {
+    background-color: $sectionBkg;
+    .background {
+        width: 60%;
+        text-align: center;
+        margin: $center;
+        padding-top: 30px;
+        padding-bottom: 50px;
+        .container {
+            width: 150px;
+            height: 200px;
+            display: inline-block;
+            margin-right: 20px;
+            margin-top: 20px;
+            position: relative;
+            img {
+                width: 100%;
+                height: 100%;
+            }
+            .overlay { 
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                background-color: rgba($color: #fff, $alpha: 0.5);
+                text-align: left;
+                padding: 10px 0px 40px 10px;
+                opacity: 0;
+            }
+        }
+    .container:hover .overlay {
+        opacity: 1;
+        }
+    }
+}
