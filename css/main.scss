@@ -129,8 +129,12 @@ section {
 
 .slike{    
         width: 300px;
-        height:400px;              
-        margin: marg(xl);
+        height:400px;    
+       /*  height: 100%;
+        width: 100%;
+        margin-left: 12.5%;           
+        margin-right: 12.5%;  */          
+        margin: marg(xl); 
         @include bg-cover;
         background-position: center center;
         overflow: hidden; 
@@ -303,7 +307,7 @@ nav {
 
     .cetvrta {
 
-        button{
+        .btn{
 			display: block;
 			margin: 0 auto;
 		}

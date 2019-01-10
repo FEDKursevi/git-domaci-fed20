@@ -3,8 +3,7 @@
 		margin: 0;
 		padding: 0;
 		font-family: $font;
-        font-weight: 300;
-        		
+        font-weight: 300;       		
 
 		-webkit-box-sizing: border-box;
 	  	   -moz-box-sizing: border-box;
@@ -23,12 +22,24 @@
     @content;
 }
 
+@mixin clearfix {
+  &:before, &:after {
+      content: "";
+      display: block;
+  }
+  &:after {
+      clear: both;
+   }
+}
+
+
 @mixin abs {
       position: absolute; 
       left: 50%;
       top: 50%;
       transform: translate(-50%, -50%);
 }
+
 @mixin cent {
       position: absolute; 
       left: 50%;
@@ -62,7 +73,8 @@
 	padding: .5rem 1rem;
 	background-color: white;
 	color:boja(font);
-	margin: 0 1em;
+    margin: 0 1em;
+    cursor: pointer;
 }
 
 @mixin button-1 {
