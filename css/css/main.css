@@ -1,0 +1,425 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Open Sans Condensed", sans-serif;
+  font-weight: 300;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
+h2 {
+  text-transform: uppercase;
+  font-weight: bold;
+  text-align: center;
+  color: #fab95b;
+  background-color: #122631;
+  margin: 1em auto;
+  display: block;
+  width: 30vw;
+  padding: 0.5em;
+}
+
+.hidden {
+  display: none;
+  padding: 0.5em 4em;
+  font-size: 1.2em;
+  background-color: #f5564e;
+  color: #fff;
+}
+
+header {
+  width: 100%;
+  height: 100vh;
+  background: url("../slike/main_background.jpg") no-repeat center center;
+  background-size: cover;
+  padding: 0 2%;
+  font-family: "Staatliches", cursive;
+}
+
+header nav {
+  width: 100%;
+  background-color: #f5564e;
+  height: 1.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+header nav ul {
+  width: 100%;
+  list-style: none;
+  text-transform: uppercase;
+  height: 1.5em;
+}
+
+header nav ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  margin-left: 1em;
+  text-align: right;
+}
+
+header nav ul li a {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 1.1em;
+  padding-left: 0.5rem;
+  text-decoration: none;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+header nav ul li a:hover {
+  text-decoration: underline;
+}
+
+header nav .poz {
+  width: 3em;
+  height: 3em;
+  background-color: #f5564e;
+}
+
+header nav .poz img {
+  height: 2.8em;
+  width: 2.8em;
+}
+
+header .heading {
+  text-transform: uppercase;
+}
+
+header .heading h1 {
+  padding-top: 60vh;
+  font-size: 4em;
+  color: #fab95b;
+  font-weight: bold;
+}
+
+header .heading p {
+  font-size: 1.2rem;
+  color: #fff;
+  font-weight: bold;
+}
+
+section {
+  margin-top: 3em;
+}
+
+.slike {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.slike .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.slike .row .img {
+  background-color: #f5564e;
+  border: 3px solid #fff;
+  padding: 0;
+  width: 8em;
+  height: 8em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+}
+
+.slike .row .img .hovContainer {
+  visibility: hidden;
+  font-size: 5.7em;
+  color: #fff;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.slike .row .img:hover {
+  width: 16em;
+  cursor: pointer;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.slike .row .img:hover > .hovContainer {
+  width: 14em;
+  text-align: center;
+  border-left: 0.5em solid #122631;
+  background-color: #f5564e;
+  visibility: visible;
+}
+
+.slike .row .img1 {
+  background-image: url("../slike/key.png");
+  background-size: cover;
+}
+
+.slike .row .img2 {
+  background-image: url("../slike/key.png");
+  background-size: cover;
+}
+
+.slike .row .img3 {
+  background-image: url("../slike/key.png");
+  background-size: cover;
+}
+
+.slike .row .img4 {
+  background-image: url("../slike/key.png");
+  background-size: cover;
+}
+
+.slike .row .img5 {
+  background-image: url("../slike/key.png");
+  background-size: cover;
+}
+
+.slike .row .img6 {
+  background-image: url("../slike/key.png");
+  background-size: cover;
+}
+
+.slike .row .img7 {
+  background-image: url("../slike/key.png");
+  background-size: cover;
+}
+
+.slike .row .img8 {
+  background-image: url("../slike/key.png");
+  background-size: cover;
+}
+
+.slike .row .img9 {
+  background-image: url("../slike/key.png");
+  background-size: cover;
+}
+
+.slike .row .img10 {
+  background-image: url("../slike/key.png");
+  background-size: cover;
+}
+
+.slike .row .img11 {
+  background-image: url("../slike/key.png");
+  background-size: cover;
+}
+
+.slike .row .img12 {
+  background-image: url("../slike/key.png");
+  background-size: cover;
+}
+
+.slike .row .img13 {
+  background-image: url("../slike/key.png");
+  background-size: cover;
+}
+
+.slike .row .img14 {
+  background-image: url("../slike/key.png");
+  background-size: cover;
+}
+
+.slike .row .img15 {
+  background-image: url("../slike/key.png");
+  background-size: cover;
+}
+
+.slike .row .img16 {
+  background-image: url("../slike/key.png");
+  background-size: cover;
+}
+
+.slike .row .img17 {
+  background-image: url("../slike/key.png");
+  background-size: cover;
+}
+
+.text {
+  padding: 2em 0;
+  background-color: #e8e2db;
+}
+
+.text p {
+  -webkit-column-count: 3;
+          column-count: 3;
+  -webkit-column-gap: 1em;
+          column-gap: 1em;
+  text-align: justify;
+  margin-bottom: 3em;
+}
+
+.contact {
+  margin: 5em 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.contact .forma {
+  background-color: #e8e2db;
+  /*   width: 30%; */
+  width: 35em;
+  padding: 1rem;
+}
+
+.contact .forma select, .contact .forma input {
+  padding: 0.1rem;
+  float: left;
+  padding-bottom: 0.75rem;
+}
+
+.contact .forma select {
+  margin-right: 1%;
+  background-color: #fff;
+  width: 10%;
+}
+
+.contact .forma input[name="FirstName"],
+.contact .forma input[name="LastName"] {
+  margin-bottom: 1%;
+  margin-left: 0.1rem;
+  width: 44%;
+}
+
+.contact .forma input[name="email"], .contact .forma textarea {
+  width: 100%;
+  margin-bottom: 1%;
+}
+
+.contact .forma button {
+  padding: 0.5em 0;
+  width: 100%;
+  background-color: #f5564e;
+}
+
+footer {
+  background-color: #f5564e;
+  color: #fff;
+  text-align: center;
+}
+
+@media only screen and (max-width: 56.25em) {
+  h2 {
+    width: 70vw;
+  }
+  header {
+    padding: 0;
+    text-align: center;
+  }
+  header .heading {
+    padding: 0;
+    /*   @include abs; */
+  }
+  .slike .row .img {
+    width: 6em;
+    height: 6em;
+  }
+  .slike .row .img .hovContainer {
+    font-size: 4em;
+  }
+  .slike .row .img:hover {
+    width: 12em;
+  }
+  .slike .row .img:hover > .hovContainer {
+    width: 10.5em;
+    border-left: .375em solid #000;
+  }
+  .text .hidden {
+    display: block;
+    margin: 0.5em auto;
+  }
+  .text p {
+    display: none;
+  }
+  .contact {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .contact .mapa {
+    -webkit-box-ordinal-group: 0;
+        -ms-flex-order: -1;
+            order: -1;
+    margin-bottom: 2em;
+  }
+}
+
+@media only screen and (max-width: 37.5em) {
+  header {
+    background: #122631;
+    height: 80vw;
+  }
+  header nav {
+    height: 30vw;
+  }
+  header ul {
+    width: 100%;
+  }
+  header ul li {
+    width: 100%;
+    padding: .5em;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  header ul li a {
+    width: 100%;
+    text-align: center;
+  }
+  .poz {
+    display: none;
+  }
+  .heading h1 {
+    margin-top: -50vh;
+    padding-top: 0;
+    text-align: center;
+    color: #fff;
+  }
+  .slike .hidden {
+    display: inline-block;
+  }
+  .slike .row .img {
+    display: none;
+  }
+}
+/*# sourceMappingURL=main.css.map */

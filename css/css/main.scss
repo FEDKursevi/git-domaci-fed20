@@ -1,0 +1,304 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+@import 'variables';
+@import 'mixins';
+
+@include reset;
+
+h2{
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+    color: boja(zuta);
+    background-color:boja(teget);
+   margin: 1em auto;
+    display: block;
+    width: 30vw;
+    padding: 0.5em;
+}
+
+ .hidden {
+    display: none;
+    padding: 0.5em 4em;
+    font-size: 1.2em;
+    background-color: boja(crvena);
+    color: #fff;   
+}
+
+header {
+    width: 100%;
+	height: 100vh;
+	background: url('../slike/main_background.jpg') no-repeat center center;         
+    @include bg-cover;
+    padding: 0 2%;
+    font-family: $font1;       
+    
+nav{       
+      width: 100%; 
+      background-color: boja(crvena);
+      height: 1.5rem; 
+      display: flex;        
+         
+   ul {
+       width: 100%;   
+       list-style: none;
+       text-transform: uppercase;  
+       height: 1.5em; 
+     
+       li{   
+          display: flex;            
+          justify-content: flex-start;       
+          margin-left: 1em;
+          text-align: right;           
+
+           a{
+             @include link;
+             padding-left: marg(s);
+             text-decoration: none;
+               justify-content: flex-start;
+
+               &:hover {
+              text-decoration: underline;
+               }
+           }
+       }       
+    }    
+
+    .poz{     
+     width: 3em;
+     height: 3em;
+     background-color: boja(crvena);
+     img{                   
+      height: 2.8em;
+      width: 2.8em;
+        }
+     }
+ }
+     
+    .heading {    
+        text-transform: uppercase;  
+                   
+       h1{            
+        padding-top: 60vh;         
+            font-size: 4em;
+            color: boja(zuta);           
+            font-weight: bold;           
+        }
+
+        p{            
+        font-size: 1.2rem;        
+        color: #fff;
+        font-weight: bold;
+        }
+    }
+ }
+     
+    section {
+        margin-top: 3em;        
+    }   
+       
+        .slike {
+             display: flex;
+             flex-direction: column;     
+          
+            .row{
+                display: flex;                
+                justify-content: center;       
+          
+
+            .img {           
+            background-color: boja(crvena);
+            border: 3px solid #fff;
+            padding: 0;
+            width: 8em;
+            height: 8em; 
+            display: flex;    
+             justify-content: center;
+             transition: all .4s ease-in-out;
+
+              .hovContainer{
+                  visibility: hidden;
+                  font-size: 5.7em;
+                  color: #fff;
+                  align-self: center;
+                }
+             &:hover  {             
+               width: 16em;
+               cursor: pointer;  
+               justify-content: flex-end;
+               
+                &> .hovContainer {                   
+                    width: 14em;
+                    text-align: center;
+                    border-left: .5em solid boja(teget);
+                    background-color:boja(crvena);
+                    visibility: visible;
+                  
+                    }                                
+                  }      
+                } 
+        
+            @for $i from 1 through 17 {                
+            .img#{$i} { 
+             background-image: url('../slike/key.png');
+             background-size: cover;  }                
+              }       
+         }        
+                    
+      }    
+       .text{
+           padding: 2em 0;
+           background-color: boja(siva-sv);
+
+           p{
+           column-count: 3;
+           column-gap: 1em;
+           text-align: justify;
+           margin-bottom: 3em;            
+           }               
+       } 
+       
+       .contact {
+           margin: 5em 0;
+
+           display: flex;
+           justify-content: space-around;
+            .forma{
+                background-color: boja(siva-sv);
+              /*   width: 30%; */
+              width: 35em;
+                padding: marg(l);
+                
+      select, input {
+                padding: marg(xs);
+                float: left;                
+                padding-bottom: marg(m);
+             }
+        select {
+                margin-right: 1%;
+               background-color: #fff;
+                width: 10%;
+            }
+            input[name="FirstName"],
+            input[name="LastName"] {
+                margin-bottom: 1%;
+                margin-left: marg(xs);
+                width: 44%;
+           } 
+           input[name="email"], textarea {
+                            width: 100%;
+              margin-bottom: 1%;
+         }
+         button{
+             padding: 0.5em 0;
+             width: 100%;
+             background-color: boja(crvena);
+         } 
+       }
+    }      
+       
+            
+ footer{
+     background-color: boja(crvena);
+     color: #fff;
+     text-align: center;
+ }
+ 
+ //900px
+ @include respond(tab-port) {
+     h2{width: 70vw;}
+   header{
+       padding: 0;
+       text-align: center;
+
+       .heading {
+           padding: 0;
+         /*   @include abs; */
+       }
+   }
+
+ .slike .row .img {
+     width: 6em;
+     height: 6em;
+
+     .hovContainer {
+         font-size: 4em;
+     }
+     &:hover {
+         width: 12em;
+
+         &> .hovContainer {
+             width: 10.5em;
+             border-left: .375em solid #000;
+         }
+     }
+ }
+
+
+
+   .text {
+       .hidden{
+           display: block;
+           margin: 0.5em auto;
+       }
+       p{
+           display: none;
+       }
+    }
+
+    .contact {
+        display: flex;
+        flex-direction: column;      
+        align-items: center;
+
+        .mapa{
+            order: -1;
+            margin-bottom: 2em;
+        }
+    }
+ }
+ //600px
+ @include respond(phone){
+    header {       
+        background: boja(teget);
+        height: 80vw;
+         nav {
+        height: 30vw;  
+         }
+         ul {
+       width: 100%;
+        li {
+          width: 100%;
+       
+          padding: .5em;
+          display: flex;
+          flex-direction: column;
+        
+          a{
+              width: 100%;
+           text-align: center;           
+          }
+        }
+      }
+    }
+    .poz {
+        display: none;
+    }
+    .heading{
+      
+        h1{
+      margin-top: -50vh;   
+        padding-top: 0;
+        text-align: center;
+        color: #fff;
+        }
+       
+    }
+
+    .slike .hidden {
+        display: inline-block;
+    }
+  .slike .row  .img {
+        display: none;
+    }
+
+ }

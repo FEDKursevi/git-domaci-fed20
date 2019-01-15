@@ -1,0 +1,30 @@
+
+$font: 'Open Sans Condensed', sans-serif;
+$font1: 'Staatliches', cursive; //naslovi
+
+$boja : (
+zuta: #fab95b,
+teget : #122631,
+tr-plava : rgba(55, 66, 73, .5),
+font: #797979,
+naslov:  #374249,
+crvena: #f5564e,
+siva-sv: #e8e2db
+);
+
+$velicina : (
+  n : 0,
+  xs : 0.1rem,
+  s :  0.5rem,
+  m : 0.75rem,
+  l : 1rem,
+  xl : 3rem,
+);
+
+@function boja($ime){
+    @return map-get($boja, $ime);
+}
+
+@function marg($ime...){
+    @return map-get($velicina, $ime...);
+}
